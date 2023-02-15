@@ -1,0 +1,25 @@
+@import url("https://ghgantz.github.io/customCss/ccfolia/chat.css");
+@import url("https://ghgantz.github.io/customCss/ccfolia/fadeIntoRight.css");
+
+.MuiList-root>div>div>div>div:nth-last-child(-n+3) {
+  display: block !important;
+}
+
+:root {
+  --icon-width: 200px !important; /** 画像の横幅 */
+  --icon-height: 200px !important; /** 画像の高さ */
+  --font-color-success: rgb(255 255 255) !important;
+  --font-color-fail: rgb(255 255 255) !important;
+  --background-color: rgba(0, 0, 0, 0.95) !important;
+  --is-top: 0;/** 上揃えの場合⇒0、下揃えの場合⇒auto **/
+  --is-bottom: auto;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
+}
+
+.MuiListItemText-root {
+  z-index: 3 !important;
+}
+
+.MuiListItem-root {
+  padding-left: 20px !important;
+  overflow: hidden !important;
+}

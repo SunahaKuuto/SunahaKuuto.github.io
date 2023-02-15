@@ -1,0 +1,162 @@
+:root {
+  --background-color: rgb(0, 0, 0);
+  --background-padding: 8px 8px 8px 8px;
+  --border-color: rgb(255, 255, 255);
+  --border-image: url();
+  --border-width: 0px;
+  --border-radius: 0px;
+  --border-shadow: 0;
+  --font-color: rgb(255, 255, 255);
+  --font-color-shadow: 0;
+  --font-color-fail: rgb(245, 0, 87);
+  --font-color-fail-shadow: 0;
+  --font-color-success: rgb(33, 150, 243);
+  --font-color-success-shadow: 0;
+  --font-size: 1.8rem;
+  --font-shadow: 0;
+  --image-radius: 0%;
+  --width: 500px;
+  --line-clamp: 3;
+}
+
+/*************************
+　表示用CSS
+.MuiList-root>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
+    display: block !important;
+}
+*************************/
+/**************************
+　各種調整
+**************************/
+/* OBS */
+body {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+/* カットイン */
+.sc-gJwTLC,
+/* 背景 */
+.sc-TRNrF,
+/* 盤面 */
+.sc-djvmMF,
+/* キャラ */
+.sc-cwpsFg,
+/* 吹き出し */
+.sc-djUGQo,
+/* 入力欄 */
+form > div,
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+header>.MuiToolbar-gutters,
+/* 音量 */
+.sc-ikjQzJ,
+/* 拡大縮小 */
+.sc-hZgfyJ,
+/* 鉛筆ボタン */
+.sc-dSuTWQ,
+/* 監視モード */
+.MuiSnackbar-root,
+/* タイマー */
+.sc-hAsxaJ,
+/* スクロールバー */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/**************************
+　デザイン
+**************************/
+.MuiDrawer-root>.MuiPaper-root {
+  width: 100%;
+}
+
+hr {
+  display: none;
+}
+
+.MuiDrawer-paperAnchorDockedRight {
+  border: none;
+}
+
+.MuiListItem-root {
+  padding: var(--background-padding);
+  background: var(--background-color);
+  border: solid var(--border-width) var(--border-color);
+  border-radius: var(--border-radius);
+  border-image: var(--border-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: var(--border-shadow);
+  align-items: center;
+}
+
+.MuiListItemAvatar-alignItemsFlexStart {
+  margin: 0px;
+}
+
+.MuiListItemAvatar-root>div {
+  background: transparent;
+  border-radius: var(--image-radius);
+}
+
+.MuiPaper-root {
+  background-color: transparent;
+}
+
+.MuiTypography-body2 {
+  font-size: var(--font-size)
+}
+
+.MuiList-root>div:nth-child(1)>div>div {
+  height: 50vh !important;
+}
+
+.MuiList-root>div:nth-child(1)>div>div>div {
+  display: none;
+  height: auto !important;
+  min-height: auto !important;
+  width: var(--width) !important;
+  position: static !important;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.MuiListItemText-root {
+  overflow: hidden;
+}
+
+p.MuiTypography-root,
+.MuiTypography-colorTextSecondary {
+  color: var(--font-color);
+  text-shadow: var(--font-color-shadow);
+}
+
+p.MuiTypography-root {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp);
+}
+
+.MuiTypography-colorPrimary {
+  color: var(--font-color-success);
+  text-shadow: var(--font-color-success-shadow);
+}
+
+.MuiTypography-colorSecondary {
+  color: var(--font-color-fail);
+  text-shadow: var(--font-color-fail-shadow);
+}
+
+.MuiListItemText-primary {
+  display: none;
+}
+.MuiListItemText-primary,
+.MuiTypography-caption {
+  color: var(--font-color);
+  text-shadow: var(--font-color-shadow);
+}
