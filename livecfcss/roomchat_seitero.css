@@ -1,8 +1,5 @@
 @import url("https://SunahaKuuto.github.io/cfcss/livecfcss/main.css");
-
-:root {
-
-}
+@import url("https://SunahaKuuto.github.io/cfcss/livecfcss/fadeintro.css");
 
 .MuiList-root>div:nth-child(1)>div>div>div:nth-last-child(-n+3) {
     display: block !important;

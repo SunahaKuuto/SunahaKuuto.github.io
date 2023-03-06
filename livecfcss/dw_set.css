@@ -1,0 +1,14 @@
+@import url("https://SunahaKuuto.github.io/cfcss/livecfcss/dicewindow.css");
+
+:root {
+  --dice-win-width: 650px !important;
+  --dice-win-border: none !important;
+  --dice-win-radius: 10px !important;
+  --content-height: 105px !important;
+  --dice-pic-right-space: 20px !important;
+  --dice-pic-y: 5% !important;
+  --dice-pic-size: 80px !important;
+  --midashi-bottom-space: 10px !important;
+  --dice-result-bottom-space: 10px !important;
+  --disp-dice-window-btn: none !important;
+} 
