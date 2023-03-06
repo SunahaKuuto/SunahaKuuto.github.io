@@ -1,5 +1,3 @@
-/* 設定変更箇所 */
-
 :root {
 /* 表示行数の上限 */
   --line-clamp: 3;
@@ -7,15 +5,15 @@
   --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
   --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
 /* ダイス結果背景 */
-  --width: 500px; /* 結果の横幅 */
+  --width: 550px; /* 結果の横幅 */
   --background-color: rgba(0, 0, 0, 0.6); /* 背景色 */
   --background-padding: 8px 18px 8px 18px; /* 外枠と文字の隙間 */
-  --border-color: rgba(255, 255, 255, 1); /* 枠線の色 */
+  --border-color: rgb(240 194 64); /* 枠線の色 */
   --border-image: url(https://xxx/yyy.png); /* 枠線に画像を使用 */
   --border-slice: 0px; /* 枠線画像の太さ */
-  --border-width: 0px; /* 枠線の幅 */
-  --border-radius: 10px; /* 角の丸み */
-  --border-shadow: 5px 5px 10px black; /* 読み方）X軸 Y軸 影の幅 色 */
+  --border-width: 2px; /* 枠線の幅 */
+  --border-radius: 0px; /* 角の丸み */
+  --border-shadow: 5px 5px 10px #565656; /* 読み方）X軸 Y軸 影の幅 色 */
   --result-space: 10px; /* ダイス結果同士の隙間 */
 /* アイコン画像の設定 */
   --icon-radius: 0%; /** 画像の丸み：0%⇒四角、50%⇒正円 */
@@ -24,10 +22,10 @@
   --icon-height: 70px; /* 画像の高さ */
   --icon-margin-top: 0px; /* アイコン上のスペース */
   --icon-margin-bottom: 0px; /* アイコン下のスペース */
-  --icon-margin-left: 0px; /* アイコン左のスペース */
-  --icon-margin-right: 15px; /* アイコン右のスペース */
+  --icon-margin-left: -15px; /* アイコン左のスペース */
+  --icon-margin-right: 20px; /* アイコン右のスペース */
 /* ダイス結果の文字部分（デフォルト） */
-  --font-size-result: 1.5rem;
+  --font-size-result: 1.4rem;
   --font-color-result: rgba(255, 255, 255, 1);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* 成功時の青文字部分 */
@@ -39,18 +37,17 @@
   --font-color-fail: rgba(255, 161, 161, 1);
   --font-shadow-fail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* ユーザ名の部分 */
-  --font-size-user-name: 1.1rem;
+  --font-size-user-name: 1rem;
   --font-color-user-name: rgba(255, 255, 255, 1);
   --font-shadow-user-name: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* ダイスを振った時間を表示するか */
-  --disp-dice-time: transparent; /** none⇒表示しない、transparent⇒表示する */
+  --disp-dice-time: none; /** none⇒表示しない、transparent⇒表示する */
   --font-size-dice-time: 1rem;
   --font-color-dice-time: rgba(255, 255, 255, 0.6);
   --font-shadow-dice-time: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 }
 
-/* OBS用のおまじない */
-
+/* OBS用 */
 body {
   background-color: rgba(0, 0, 0, 0);
   margin: 0px auto;
@@ -58,44 +55,43 @@ body {
 }
 
 /* 非表示要素の設定 */
-
 /* ツールバー */
 .MuiToolbar-regular,
 /* サウンド設定 */
-.eLyRoF,
+.dvIgZb,
 /* 盤面サイズ設定 */
-.iydCdD,
+.cDMISq,
 /* 編集ボタン */
-.MuiFab-root,
+.eIoVGu,
 /* 配置固定したスクリーンパネルの削除 */
-.bYSbUT,
-/* 配置固定してないスクリーンパネルの削除 */
-.cmsyeO,
+.craUcb,
+/* 配置固定していないスクリーンパネルの削除 */
+.cSWuti,
 /* 配置固定したマーカーパネルの削除 */
-.lfgopw,
-/* 配置固定してないマーカーパネルの削除 */
-.fBwYpd,
-/* 背景の削除 */
-.bXnBWt,
+.lbccHy,
+/* 配置固定していないマーカーパネルの削除 */
+.focXIj,
 /* 前景の削除 */
-.cTrKpP img:nth-child(1),
-.cTrKpP img:nth-child(2),
+.jmvWII>div>div>img,
 /* ステータスの削除 */
-.fjqig,
+.CawLz,
 /* キャラ駒の削除 */
-.gFQitj,
+.grjmDq,
 /* カットインの削除 */
-.gXiIDm,
+.fyqfMj,
 /* ダイス結果、チャット入力欄の削除 */
 .MuiPaper-elevation1 {
   display: none !important;
 }
-/* 広告の削除 */
-.MuiDialog-scrollPaper {
-  display: none !important; /* 広告画像の削除 */
+
+/* 背景の非表示 */
+.hLRgBW {
+  opacity: 0 !important;
 }
-.MuiBackdrop-root {
-  background: rgba(0, 0, 0, 0) !important; /* 広告背景の削除 */
+
+/* 広告の削除 */
+.MuiDialog-root {
+  display: none !important;
 }
 
 /**************************
@@ -157,19 +153,15 @@ hr {
   margin-left: var(--icon-margin-left) !important;
   margin-right: var(--icon-margin-right) !important;
 }
-.kVFvyD {
+/*　チャット欄アイコン背景 */
+.bQQFPS {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
-}
-
-/*　チャット欄アイコン背景 */
-.kVFvyD {
   background: var(--icon-background-color) !important;
   border-radius: var(--icon-radius) !important;
 }
-
 /* チャット欄アイコン画像 */
-.kVFvyD img {
+.bQQFPS img {
   width: var(--icon-width) !important;
 }
 
