@@ -1,6 +1,6 @@
 :root {
   /* -ダイス結果(下)のボタンの表示 */
-  --disp-dice-window-btn: inline-flex;
+  --disp-dice-window-btn: none;
   /* -サイコロ画像の表示 */
   --disp-dice-picture: flex;
 
@@ -10,11 +10,11 @@
   /* 横幅 */
   --dice-win-width: 700px;
   /* 背景色 */
-  --dice-win-background: rgba(22, 22, 22, 0.84);
+  --dice-win-background: rgb(29,26,29);
   /* 枠線 */
-  --dice-win-border: solid 4px white;
+  --dice-win-border: solid 0px white;
   /* 角の丸み */
-  --dice-win-radius: 10px;
+  --dice-win-radius: 0px;
 
   /* ◆◆◆ダイス画像◆◆◆ */
   /* 表示、非表示(非表示の場合はnoneを設定) */
@@ -34,17 +34,17 @@
   /** フォント */
   --midashi-font: inherit;
   /** フォント色 */
-  --midashi-color: inherit;
+  --midashi-color: rgb(255 255 255);
   /** フォントの太さ(normal or bold) */
   --midashi-font-weight: normal;
   /** 文字サイズ */
-  --midashi-size: 22px;
+  --midashi-size: 18px;
   /** 上の余白 */
-  --midashi-top-space: 15px;
+  --midashi-top-space: 10px;
   /** 下の余白 */
-  --midashi-bottom-space: 15px;
+  --midashi-bottom-space: 10px;
   /** 左の余白 */
-  --midashi-left-space: 30px;
+  --midashi-left-space: 20px;
 
   /** ◆◆◆ダイス結果(□＞58)◆◆◆ */
   /** フォント */
@@ -54,7 +54,7 @@
   /** フォントの太さ(normal or bold) */
   --dice-result-font-weight: normal;
   /** 文字サイズ */
-  --dice-result-size: 22px;
+  --dice-result-size: 18px;
   /** 上の余白 */
   --dice-result-top-space: 15px;
   /** 下の余白 */
@@ -70,7 +70,7 @@
   /** フォントの太さ(normal or bold) */
   --content-font-weight: normal;
   /** 文字サイズ */
-  --content-size: 17.5px;
+  --content-size: 16px;
   /** 下の余白 */
   --content-bottom-space: 15px;
   /** 左の余白 */
@@ -165,7 +165,7 @@ body {
 }
 /* ダイスウィンドウ裏の背景色非表示 */
 .ihOmcc {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(255 255 255 / 0%);
   padding-top: 0px !important;
 }
 /* ダイスウィンドウ周りのドロップシャドウ非表示 */
@@ -211,6 +211,10 @@ body {
 }
 .MuiToolbar-gutters {
   padding-left: 0px !important;
+}
+
+.MuiPaper-root>img {
+  display: none;
 }
 
 /** ダイス結果(□＞58) */

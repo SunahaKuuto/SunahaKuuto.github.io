@@ -1,4 +1,5 @@
 @import url("https://SunahaKuuto.github.io/cfcss/livecfcss/dicewindow.css");
+@import url("https://SunahaKuuto.github.io/cfcss/livecfcss/dw_fade.css");
 
 :root {
   --dice-win-width: 650px !important;
