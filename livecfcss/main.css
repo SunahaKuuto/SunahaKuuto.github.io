@@ -5,13 +5,13 @@
   --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
   --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
 /* ダイス結果背景 */
-  --width: 550px; /* 結果の横幅 */
-  --background-color: rgba(0, 0, 0, 0.6); /* 背景色 */
-  --background-padding: 8px 18px 8px 18px; /* 外枠と文字の隙間 */
-  --border-color: rgb(240 194 64); /* 枠線の色 */
+  --width: 500px; /* 結果の横幅 */
+  --background-color: rgb(27 27 27); /* 背景色 */
+  --background-padding: 0px 15px 5px 15px; /* 外枠と文字の隙間 */
+  --border-color: rgb(29,26,29); /* 枠線の色 */
   --border-image: url(https://xxx/yyy.png); /* 枠線に画像を使用 */
   --border-slice: 0px; /* 枠線画像の太さ */
-  --border-width: 2px; /* 枠線の幅 */
+  --border-width: 3px; /* 枠線の幅 */
   --border-radius: 0px; /* 角の丸み */
   --border-shadow: 5px 5px 10px #565656; /* 読み方）X軸 Y軸 影の幅 色 */
   --result-space: 10px; /* ダイス結果同士の隙間 */
@@ -22,23 +22,23 @@
   --icon-height: 70px; /* 画像の高さ */
   --icon-margin-top: 0px; /* アイコン上のスペース */
   --icon-margin-bottom: 0px; /* アイコン下のスペース */
-  --icon-margin-left: -15px; /* アイコン左のスペース */
-  --icon-margin-right: 20px; /* アイコン右のスペース */
+  --icon-margin-left: -25px; /* アイコン左のスペース */
+  --icon-margin-right: 15px; /* アイコン右のスペース */
 /* ダイス結果の文字部分（デフォルト） */
   --font-size-result: 1.4rem;
-  --font-color-result: rgba(255, 255, 255, 1);
+  --font-color-result: rgb(255 255 255);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* 成功時の青文字部分 */
   --font-size-success: 1.1rem;
-  --font-color-success: rgba(134, 202, 255, 1);
+  --font-color-success: rgb(20 205 229);
   --font-shadow-success: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* 失敗時の赤文字部分 */
   --font-size-fail: 1.1rem;
-  --font-color-fail: rgba(255, 161, 161, 1);
+  --font-color-fail: rgb(226 20 82);
   --font-shadow-fail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* ユーザ名の部分 */
   --font-size-user-name: 1rem;
-  --font-color-user-name: rgba(255, 255, 255, 1);
+  --font-color-user-name: rgb(230 198 73);
   --font-shadow-user-name: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* ダイスを振った時間を表示するか */
   --disp-dice-time: none; /** none⇒表示しない、transparent⇒表示する */
@@ -220,8 +220,8 @@ p.MuiTypography-root {
 /* ユーザ名、ダイスを振った時間 */
 .MuiListItemText-primary,
 .MuiTypography-caption {
-  /** ユーザ名を設定した色にしたい場合はここ（color）を削除する */
-  color: var(--font-color-user-name) !important;
+  /** ユーザ名を設定した色にしたい場合はここ（color）を削除する 
+      color: var(--font-color-user-name) !important; */
   text-shadow: var(--font-shadow-user-name) !important;
   font-size: var(--font-size-user-name) !important;
 }
