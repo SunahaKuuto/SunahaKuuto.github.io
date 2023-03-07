@@ -1,8 +1,8 @@
 :root {
   /* -ダイス結果(下)のボタンの表示 */
-  --disp-dice-window-btn: none;
+  --disp-dice-window-btn: flex;
   /* -サイコロ画像の表示 */
-  --disp-dice-picture: flex;
+  --disp-dice-picture: none;
 
   /* -dice window */
 
@@ -18,7 +18,7 @@
 
   /* ◆◆◆ダイス画像◆◆◆ */
   /* 表示、非表示(非表示の場合はnoneを設定) */
-  --disp-dice-pic: flex;
+  --disp-dice-pic: none;
   /* サイズ設定 */
   --dice-pic-size: 70px;
   /* 上下位置の調整 */

@@ -1,6 +1,6 @@
 :root {
 /* 表示行数の上限 */
-  --line-clamp: 3;
+  --line-clamp:2;
 /* ダイス結果の上下揃えの設定 */
   --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
   --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
@@ -54,43 +54,42 @@ body {
   overflow: hidden;
 }
 
-/* 非表示要素の設定 */
-/* ツールバー .MuiToolbar-regular, */
-header>.MuiToolbar-gutters,
-/* サウンド設定 */
-.dvIgZb,
-/* 盤面サイズ設定 */
-.cDMISq,
-/* 編集ボタン */
-.eIoVGu,
-/* 配置固定したスクリーンパネルの削除 */
-.craUcb,
-/* 配置固定していないスクリーンパネルの削除 */
-.cSWuti,
-/* 配置固定したマーカーパネルの削除 */
-.lbccHy,
-/* 配置固定していないマーカーパネルの削除 */
-.focXIj,
-/* 前景の削除 */
-.jmvWII>div>div>img,
-/* ステータスの削除 */
-.CawLz,
-/* キャラ駒の削除 */
-.grjmDq,
-/* カットインの削除 */
-.fyqfMj,
-/* ダイス結果、チャット入力欄の削除 */
-.MuiPaper-elevation1 {
+/* カットイン */
+div[open],
+/* 背景 */
+.MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
+/* 盤面 */
+div[tabindex="0"]>div:nth-child(1),
+/* キャラ */
+.MuiButtonBase-root+div+div:not(.MuiTabs-scroller),
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
+/* 吹き出し */
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded,
+/* 入力欄 */
+form > div {
   display: none !important;
 }
 
-/* 背景の非表示 */
-.hLRgBW {
-  opacity: 0 !important;
-}
-
-/* 広告の削除 */
-.MuiDialog-root {
+/**************************
+　共通
+**************************/
+/* モーダル削除 */
+[role="presentation"],
+/* ヘッダー削除 */
+/* headerのみだとチャットのタブも消える */
+header>.MuiToolbar-gutters,
+/* 音量 */
+div[tabindex="0"]>div:nth-child(3),
+/* 拡大縮小 */
+.MuiButtonBase-root+div,
+/* 鉛筆ボタン */
+.MuiButtonBase-root.MuiFab-root,
+/* 監視モード */
+.MuiSnackbar-root,
+/* タイマー */
+.MuiPaper-elevation5,
+/* スクロールバー */
+::-webkit-scrollbar {
   display: none !important;
 }
 
