@@ -50,7 +50,7 @@
   /** フォント */
   --dice-result-font: inherit;
   /** フォント色 */
-  --dice-result-color: rgb(255 219 80);
+  --dice-result-color: inherit;
   /** フォントの太さ(normal or bold) */
   --dice-result-font-weight: normal;
   /** 文字サイズ */
@@ -261,3 +261,8 @@ body {
 .jduNjR::-webkit-scrollbar {
   display: none !important;
 }
+
+/*   :root {
+--dice-result-color: rgb(255,255,255) !important;
+}
+*/

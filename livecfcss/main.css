@@ -232,6 +232,12 @@ span.MuiTypography-root.MuiTypography-caption {
   font-size: var(--font-size-dice-time) !important;
 }
 
-.MuiList-root>div>div>div>div:nth-last-child(-n+3) {
+/*
+:root {
+    --line-clamp:2 !important;
+    width: 800px !important;
+    }
+ .MuiList-root>div>div>div>div:nth-last-child(-n+2) {
     display: block !important;
 }
+} */
