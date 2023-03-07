@@ -50,7 +50,7 @@
   /** フォント */
   --dice-result-font: inherit;
   /** フォント色 */
-  --dice-result-color: inherit;
+  --dice-result-color: rgb(255 219 80);
   /** フォントの太さ(normal or bold) */
   --dice-result-font-weight: normal;
   /** 文字サイズ */

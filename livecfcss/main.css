@@ -55,8 +55,8 @@ body {
 }
 
 /* 非表示要素の設定 */
-/* ツールバー */
-.MuiToolbar-regular,
+/* ツールバー .MuiToolbar-regular, */
+header>.MuiToolbar-gutters,
 /* サウンド設定 */
 .dvIgZb,
 /* 盤面サイズ設定 */
