@@ -210,6 +210,10 @@ body {
   padding-left: 0px !important;
 }
 
+.MuiPaper-root>img {
+  display: none;
+}
+
 /** ダイス結果(□＞58) */
 .MuiPaper-rounded .MuiTypography-body2 {
   /** フォント */
