@@ -1,6 +1,6 @@
 :root {
   /* -ダイス結果(下)のボタンの表示 */
-  --disp-dice-window-btn: inline-flex;
+  --disp-dice-window-btn: flex;
   /* -サイコロ画像の表示 */
   --disp-dice-picture: none;
 
