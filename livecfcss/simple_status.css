@@ -141,8 +141,6 @@ body {
   /* 12/15など、ステータスの周りに白縁を設定する */
   --status-outline-color: #000000;
   }
-
-
 /*** デザイン ***/
 .MuiBadge-root {
   display: var(--disp-icon) !important;
