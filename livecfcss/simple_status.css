@@ -291,22 +291,22 @@ body {
    文字
  **************************/
   /** ステータス文字の周りの余白(上,下,左,右) */
-  --status-padding-top: 3px;
-  --status-padding-bottom: 3px;
-  --status-padding-left: 20px;
-  --status-padding-right: 20px;
+  --status-padding-top: 3px !important;
+  --status-padding-bottom: 3px !important;
+  --status-padding-left: 20px !important;
+  --status-padding-right: 20px !important;
   /** HPなど、見出し側のフォント、サイズ、色 */
-  --item-font-family: "Roboto", "", "Arial", sans-serif;
-  --item-font-size: 25px;
-  --item-font-color: rgb(37, 42, 52);
+  --item-font-family: "Roboto", "", "Arial", sans-serif !important;
+  --item-font-size: 25px !important;
+  --item-font-color: rgb(37, 42, 52) !important;
   /** 12/15など、ステータス側のフォント、サイズ、色 */
-  --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  --status-font-size: 25px;
-  --status-font-color: rgb(37, 42, 52);
+  --status-font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+  --status-font-size: 25px !important;
+  --status-font-color: rgb(37, 42, 52) !important;
   /* 不定時の赤字の色 */
-  --futei-font-color: rgb(255, 46, 99);
+  --futei-font-color: rgb(255, 46, 99) !important;
   /** HPなど、見出しの周りに白縁を設定する */
-  --item-outline-color: rgb(234, 234, 234);
+  --item-outline-color: rgb(234, 234, 234) !important;
   /** 12/15など、ステータスの周りに白縁を設定する */
-  --status-outline-color: rgb(234, 234, 234);
+  --status-outline-color: rgb(234, 234, 234) !important;
   }
