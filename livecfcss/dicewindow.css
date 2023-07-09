@@ -97,7 +97,7 @@ body {
 /** もろもろ */
 #root>div>div>div:nth-child(-n+5),
 /** 盤面サイズボタン */
-.iQBLVX,
+.cxXvgu,
 /** カットイン */
 .gbgaKQ,
 /** 編集ボタン */
@@ -105,19 +105,15 @@ body {
 /** チャット欄 */
 .MuiDrawer-paper,
 /** ステータスの削除 */
-.jyrvjI,
-/** 監視モード注釈の削除 */
-.MuiSnackbar-root {
-  display: none !important;
-}
-/** 背景の非表示 */
-.jsiJYh {
-  opacity: 0 !important;
-}
+.dIPUNQ,
 
 /** 背景の非表示 */
-.jsiJYh {
+#root>div>div:nth-child(2)>div:nth-child(1) {
   opacity: 0 !important;
+}
+/** 監視モード注釈の非表示 */
+.MuiSnackbar-root {
+  display: none !important;
 }
 
 /** 広告の削除 */
