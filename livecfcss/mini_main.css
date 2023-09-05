@@ -5,7 +5,7 @@
   --is-top: auto;/* 上揃えの場合⇒0、下揃えの場合⇒auto */
   --is-bottom: 0;/* 上揃えの場合⇒auto、下揃えの場合⇒0 */
 /* ダイス結果背景 */
-  --width: 575px; /* 結果の横幅 */
+  --width: 585px; /* 結果の横幅 */
   --background-color: rgb(27 27 27); /* 背景色 */
   --background-padding: 0px 15px 5px 15px; /* 外枠と文字の隙間 */
   --border-color: rgb(29,26,29); /* 枠線の色 */
