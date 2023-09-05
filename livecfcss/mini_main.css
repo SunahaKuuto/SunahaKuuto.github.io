@@ -220,7 +220,7 @@ p.MuiTypography-root {
 .MuiListItemText-primary,
 .MuiTypography-caption {
   /** ユーザ名を設定した色にしたい場合はここ（color）を削除する  **/
-  color: var(--font-color-user-name) !important;
+  /*color: var(--font-color-user-name) !important; */
   text-shadow: var(--font-shadow-user-name) !important;
   font-size: var(--font-size-user-name) !important;
 }
