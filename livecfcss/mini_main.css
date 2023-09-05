@@ -25,15 +25,15 @@
   --icon-margin-left: -25px; /* アイコン左のスペース */
   --icon-margin-right: 15px; /* アイコン右のスペース */
 /* ダイス結果の文字部分（デフォルト） */
-  --font-size-result: 1.4rem;
+  --font-size-result: 1.5rem;
   --font-color-result: rgb(255 255 255);
   --font-shadow-result: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* 成功時の青文字部分 */
-  --font-size-success: 1.1rem;
+  --font-size-success: 1.2rem;
   --font-color-success: rgb(20 205 229);
   --font-shadow-success: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* 失敗時の赤文字部分 */
-  --font-size-fail: 1.1rem;
+  --font-size-fail: 1.2rem;
   --font-color-fail: rgb(226 20 82);
   --font-shadow-fail: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
 /* ユーザ名の部分 */
