@@ -54,48 +54,22 @@
       overflow: hidden;
     }
     
-    /* カットイン */
-    div[open],
-    /* 背景 */
-    .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
-    /* 盤面 */
-    div[tabindex="0"]>div:nth-child(1),
-    /* 盤面背景 */
-    header.MuiAppBar-positionFixed+div,
-    /* キャラ */
-    .MuiButtonBase-root+div+div:not(.MuiTabs-scroller),
-    .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
-    /* 吹き出し */
-    .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded,
-    /* 入力欄 */
-    form > div {
-    display: none !important;
-    }
-    
-    /**************************
-    　共通
-    **************************/
-    /* モーダル削除 */
-    [role="presentation"]:not(.MuiSnackbar-root),
-    /* ヘッダー削除 */
-    /* headerのみだとチャットのタブも消える */
-    header.MuiAppBar-positionFixed,
-    /* 音量 */
-    div[tabindex="0"]>div:not([class])+div,
-    /* 拡大縮小 */
-    .MuiButtonBase-root+div,
-    /* 鉛筆ボタン */
-    .MuiButtonBase-root.MuiFab-root,
-    /* 監視モード */
+    /** ツールバー */
+    .MuiToolbar-regular,
+    /** ダイス結果 */
+    .MuiPaper-elevation1,
+    /** チャット入力欄の削除 */
+    .MuiPaper-root > form,
+    /** 背景の非表示 */
+    #root>div>div:nth-child(2),
+    /** 前景全体 */
+    #root>div>div:nth-child(3),
+    /** 監視モード注釈の削除 */
     .MuiSnackbar-root,
-    /* タイマー */
-    .MuiPaper-elevation5,
-    /* スクロールバー */
-    ::-webkit-scrollbar,
-    /* new dice */
-    div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"] {
+    /** 広告の削除 */
+    .MuiDialog-root {
     display: none !important;
-    }
+}
     
     /**************************
     　デザイン
@@ -239,7 +213,7 @@
         --line-clamp:2 !important;
         width: 800px !important;
         }
-     .MuiList-root>div>div>div>div:nth-last-child(-n+2) {
+        .MuiList-root>div>div>div>div:nth-last-child(-n+2) {
         display: block !important;
     }
     } */
