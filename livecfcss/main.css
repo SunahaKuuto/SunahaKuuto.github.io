@@ -63,34 +63,6 @@
       --font-shadow-dice-time: 2px 2px 3px black; /** 読み方）X軸 Y軸 影の幅 色 */
     }
     
-    /* OBS用 */
-    body {
-      background-color: rgba(0, 0, 0, 0);
-      margin: 0px auto;
-      overflow: hidden;
-    }
-    
-    /** ツールバー */
-    .MuiToolbar-regular,
-    /** ダイス結果 */
-    .MuiPaper-elevation1,
-    /** チャット入力欄の削除 */
-    .MuiPaper-root > form,
-    /** 背景の非表示 */
-    #root>div>div:nth-child(2),
-    /** 前景全体 */
-    #root>div>div:nth-child(3),
-    /** 監視モード注釈の削除 */
-    .MuiSnackbar-root,
-    /** 広告の削除 */
-    .MuiDialog-root {
-    display: none !important;
-}
-    
-    /**************************
-    　デザイン
-    **************************/
-    
     .MuiDrawer-root>.MuiPaper-root {
       width: 100%;
     }
