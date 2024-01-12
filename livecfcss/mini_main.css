@@ -60,6 +60,8 @@ div[open],
 .MuiPaper-root.MuiAppBar-root.MuiAppBar-positionFixed.MuiAppBar-colorDefault.MuiPaper-elevation0+div,
 /* 盤面 */
 div[tabindex="0"]>div:nth-child(1),
+/* 盤面背景 */
+header.MuiAppBar-positionFixed+div,
 /* キャラ */
 .MuiButtonBase-root+div+div:not(.MuiTabs-scroller),
 .MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded+div,
@@ -74,12 +76,12 @@ form > div {
 　共通
 **************************/
 /* モーダル削除 */
-[role="presentation"],
+[role="presentation"]:not(.MuiSnackbar-root),
 /* ヘッダー削除 */
 /* headerのみだとチャットのタブも消える */
-header>.MuiToolbar-gutters,
+header.MuiAppBar-positionFixed,
 /* 音量 */
-div[tabindex="0"]>div:nth-child(3),
+div[tabindex="0"]>div:not([class])+div,
 /* 拡大縮小 */
 .MuiButtonBase-root+div,
 /* 鉛筆ボタン */
@@ -89,7 +91,9 @@ div[tabindex="0"]>div:nth-child(3),
 /* タイマー */
 .MuiPaper-elevation5,
 /* スクロールバー */
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+/* new dice */
+div[style="position: relative; width: 100%; height: 100%; overflow: hidden;"] {
   display: none !important;
 }
 
@@ -153,14 +157,14 @@ hr {
   margin-right: var(--icon-margin-right) !important;
 }
 /*　チャット欄アイコン背景 */
-.bQQFPS {
+.MuiListItemAvatar-root > div {
   width: var(--icon-width) !important;
   height: var(--icon-height) !important;
   background: var(--icon-background-color) !important;
   border-radius: var(--icon-radius) !important;
 }
 /* チャット欄アイコン画像 */
-.bQQFPS img {
+.MuiListItemAvatar-root img {
   width: var(--icon-width) !important;
 }
 
